@@ -30,4 +30,43 @@ console.log(lista.querySelector("li:last-child"));
 
 //element vs node
 
-console.log(lista);
+console.log(lista.previousSibling);
+
+const animais = document.querySelector(".animais");
+const contato = document.querySelector(".contato");
+
+const titulo = contato.querySelector(".titulo");
+
+console.log(contato, titulo);
+
+//Insere o elemento como ultimo filho do elemento selecionado
+// animais.appendChild(titulo);
+
+//Move o elemento para antes do elemento selecionado
+contato.insertBefore(animais, titulo);
+
+//Move o elemento para antes do elemento selecionado
+const mapa = document.querySelector(".mapa");
+
+// contato.insertBefore(animais, mapa);
+
+//removendo um filho
+// contato.removeChild(titulo);
+
+contato.replaceChild(mapa, titulo);
+
+//Criando elementos html com Js
+const novoH1 = document.createElement("h1");
+console.log(novoH1);
+novoH1.innerText = "Novo Titulo";
+console.log(novoH1);
+novoH1.classList.add("titulo");
+
+mapa.appendChild(novoH1);
+
+//clonando um elemento
+const h1 = document.querySelector("h1");
+const faq = document.querySelector(".faq");
+
+const cloneH1 = h1.cloneNode(true);
+faq.appendChild(cloneH1);
