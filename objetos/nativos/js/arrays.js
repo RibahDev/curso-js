@@ -50,3 +50,31 @@ console.log(jogos);
 
 const attJogos = jogos.unshift("dota", "valorante");
 console.log(attJogos);
+
+const carros = ["Ford", "Fiat", "VW", "Honda"];
+
+console.log(carros);
+console.log(carros.splice(1, 0, "Kia", "Mustang"));
+console.log(carros);
+console.log(carros.splice(3, 2, "Ferrari"));
+console.log(carros);
+
+console.log(["Item1", "Item2", "Item3", "Item4", "Item5"].copyWithin(2, 0, 2));
+console.log(["Item1", "Item2", "Item3", "Item4", "Item5"].fill("Banana", 0, 2));
+
+const transporte1 = ["Barco", "Avião"];
+const transporte2 = ["Carro", "Moto"];
+
+console.log([].concat(transporte1, transporte2), "Lancha");
+
+linguagens = ["html", "css", "js", "php", "react", "angular", "js"];
+
+console.log(linguagens.includes("css"));
+console.log(linguagens.includes("ruby"));
+console.log(linguagens.indexOf("react"));
+console.log(linguagens.indexOf("js"));
+console.log(linguagens.lastIndexOf("js"));
+
+console.log(linguagens.join());
+console.log(linguagens.join(" "));
+console.log(linguagens.join("-_-"));
